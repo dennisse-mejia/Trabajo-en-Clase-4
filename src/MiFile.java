@@ -132,7 +132,6 @@ public class MiFile {
 
     public void reemplazarContenido() throws IOException {
         if (mf.exists() && mf.isFile()) {
-            lea.nextLine();
             System.out.println("Introduce el nuevo contenido que reemplazará el anterior: ");
             String nuevoContenido = lea.nextLine();
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(mf))) {
@@ -146,7 +145,6 @@ public class MiFile {
 
     public void agregarContenido() throws IOException {
         if (mf.exists() && mf.isFile()) {
-            lea.nextLine();
             System.out.println("Introduce el contenido que quieres agregar al archivo: ");
             String nuevoContenido = lea.nextLine();
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(mf, true))) {

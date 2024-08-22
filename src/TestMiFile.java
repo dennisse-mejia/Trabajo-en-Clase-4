@@ -29,6 +29,7 @@ public class TestMiFile {
                            Escoger una opción: """);
             try {
                 opcion = lea.nextInt();
+                lea.nextLine();
                 switch (opcion) {
                     case 1:
                         set();
